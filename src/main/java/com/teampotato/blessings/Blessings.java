@@ -15,6 +15,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.Optional;
+import java.util.UUID;
 
 @SuppressWarnings("unused")
 @Mod(Blessings.MOD_ID)
@@ -36,11 +37,13 @@ public class Blessings {
             float amount = event.getAmount();
             if (currentHealth <= amount) {
                 mobEffectInstanceOptional.ifPresent(mobEffectInstance -> {
-                    float initialDuration = BlessingsEffect.DURATION_DATA.getInt(entity.getUUID());
+                    UUID id = entity.getUUID();
+                    float initialDuration = BlessingsEffect.DURATION_DATA.getInt(id);
                     float currentDuration = mobEffectInstance.getDuration();
                     event.setAmount(0F);
                     entity.setHealth(entity.getMaxHealth() * (currentDuration / initialDuration));
                     entity.removeEffect(BlessingsEffect.INSTANCE);
+                    BlessingsEffect.DURATION_DATA.removeInt(id);
                 });
             }
         });

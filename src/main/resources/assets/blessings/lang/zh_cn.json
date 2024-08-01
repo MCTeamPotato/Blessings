@@ -1,0 +1,5 @@
+{
+  "effect.blessings.blessings": "祝福",
+  "effect.blessings.blessings.desc": "当你受到致命伤害时，此buff会被消耗，并为你恢复一定生命值。\n 你受到的伤害将会减少 (1 - 80% ^ 效果等级)。",
+  "effect.blessings.blessings.description": "当你受到致命伤害时，此buff会被消耗，并为你恢复一定生命值。\n 你受到的伤害将会减少 (1 - 80% ^ 效果等级)。"
+}

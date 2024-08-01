@@ -1,0 +1,22 @@
+modLoader = "javafml"
+loaderVersion = "[36,)"
+license = "LGPL-v3"
+
+[[mods]]
+modId = "blessings"
+version = "${version}"
+displayName = "Blessings"
+authors = "TeamPotato"
+description = '''
+本模组添加了“祝福”药水效果，持有此效果的生物受到的伤害会减少 (1 - 80% ^ 效果等级)。。
+持有者死亡时，此效果会被消耗，让其恢复最大生命值(死亡时效果剩余时长/获得效果时其时长)%的血量。
+此效果目前只能通过/effect指令获取，若想在生存模式中使用，请整合包作者自行魔改。
+本模组的制作灵感来源于奥奇传说手游中神祭·萨拉诺斯精灵的技能效果。
+'''
+
+[[dependencies.blessings]]
+modId = "forge"
+mandatory = true
+versionRange = "[36,)"
+ordering = "NONE"
+side = "BOTH"

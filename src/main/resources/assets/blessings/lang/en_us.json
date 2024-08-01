@@ -1,0 +1,5 @@
+{
+  "effect.blessings.blessings": "Blessings",
+  "effect.blessings.blessings.desc": "When you receive lethal damage, this buff will be consumed and you regain a certain amount of health.\n The damage you take will be reduced by (1 -80% ^ this effect's level).",
+  "effect.blessings.blessings.description": "When you receive lethal damage, this buff will be consumed and you regain a certain amount of health.\n The damage you take will be reduced by (1 - 80% ^ this effect's level)."
+}
